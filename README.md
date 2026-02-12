@@ -1,37 +1,69 @@
-SQL Study Log
+# SQL Study
 
-This repository documents my hands-on SQL learning journey using PostgreSQL running in Docker.
+This repository documents my hands-on SQL learning journey using PostgreSQL running inside Docker.  
+The goal is to build a strong foundation in relational databases, querying logic, and data diagnostics through structured exercises.
 
-Tech Stack
+---
 
-PostgreSQL (Docker container)
+## 🛠 Tech Stack
 
-DBeaver (database client)
+- PostgreSQL (running in Docker)
+- DBeaver (database client)
+- Git & GitHub (version control + documentation)
 
-GitHub for documentation
+---
 
-Topics Covered
+## 📂 Repository Structure
 
-SELECT statements
+sql-study/
+│
+├── docker/
+│ └── docker-setup.md
+│
+├── exercises/
+│ ├── 01_basic_select/
+│ │ ├── schema.sql
+│ │ ├── inserts.sql
+│ │ ├── queries.sql
+│ │ └── notes.md
+│ │
+│ └── 02_joins/
+│ ├── schema.sql
+│ ├── inserts.sql
+│ ├── queries.sql
+│ └── notes.md
+│
+├── screenshots/
+└── README.md
 
-NULL handling (IS NULL)
 
-Aggregations (COUNT, GROUP BY)
+Each exercise is structured to separate:
 
-Data completeness diagnostics
+- Schema definition
+- Data insertion
+- Query logic
+- Conceptual notes and reflections
 
-JOIN operations
+This ensures clarity, reproducibility, and clean version control.
 
-Example Concept: NULL Handling
+---
 
-Example query:
+## 📚 Topics Covered
 
-SELECT 
-    COUNT(*) AS total,
-    COUNT(age) AS non_null_ages,
-    COUNT(*) - COUNT(age) AS null_ages
-FROM students;
+### Basic Querying
+- `SELECT`
+- `WHERE`
+- `ORDER BY`
+- `LIMIT`
+
+### NULL Handling
+Understanding how SQL treats `NULL` as unknown rather than empty.
+
+Example:
+
+```sql
+SELECT *
+FROM students
+WHERE age IS NULL;
 
 
-Key insight:
-COUNT(column) ignores NULL values.
