@@ -35,11 +35,10 @@ This ensures clarity, reproducibility, and clean version control.
 ### NULL Handling
 Understanding how SQL treats `NULL` as unknown rather than empty.
 
-Example:
 
-```sql
-SELECT *
-FROM students
-WHERE age IS NULL;
+### JOINs & Conditional Logic
 
-
+- `INNER JOIN`
+- `LEFT JOIN`
+- Aggregation after JOIN (`GROUP BY` with joins)
+- Conditional logic using `CASE WHEN`
