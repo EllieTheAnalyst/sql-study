@@ -13,30 +13,6 @@ The goal is to build a strong foundation in relational databases, querying logic
 
 ---
 
-## 📂 Repository Structure
-
-sql-study/
-│
-├── docker/
-│ └── docker-setup.md
-│
-├── exercises/
-│ ├── 01_basic_select/
-│ │ ├── schema.sql
-│ │ ├── inserts.sql
-│ │ ├── queries.sql
-│ │ └── notes.md
-│ │
-│ └── 02_joins/
-│ ├── schema.sql
-│ ├── inserts.sql
-│ ├── queries.sql
-│ └── notes.md
-│
-├── screenshots/
-└── README.md
-
-
 Each exercise is structured to separate:
 
 - Schema definition
