@@ -1,3 +1,5 @@
+![SQL](https://img.shields.io/badge/SQL-4479A1?style=flat&logo=postgresql&logoColor=white)
+
 # SQL Study
 
 This repository documents my hands-on SQL learning journey using PostgreSQL running inside Docker.  
